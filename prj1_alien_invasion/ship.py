@@ -13,6 +13,7 @@ class Ship(Sprite):
         self.image = pygame.image.load(path)
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
+        
         # Start each new ship at the bottom center of the screen.
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
@@ -23,6 +24,9 @@ class Ship(Sprite):
         ### Movement flag
         self.moving_right = False
         self.moving_left = False
+    
+
+
     def update(self):
         """ Update the ship's position based on the movement flag. """
         ### Update the ship's centr value, not the rect. 
@@ -34,9 +38,12 @@ class Ship(Sprite):
         ### Update rect object from self.center.
         self.rect.centerx = self.center 
 
+
+
     def blitme(self):
     	"""Draw the ship at its current location."""
     	self.screen.blit(self.image, self.rect)
+
 
 
     def center_ship(self):

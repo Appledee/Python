@@ -210,6 +210,7 @@ def check_aliens_bottom(ai_settings, screen, stats, sb, ship, aliens,
             break
 
 
+            
 def update_aliens(ai_settings, stats, screen, ship, aliens, bullets, sb):
     """Update the postions of all aliens in the fleet."""
     """Check if the fleet is at an edge, 

@@ -45,6 +45,4 @@ def run_game():
         #else: sys.exit()
         gf.update_screen(ai_settings, screen, ship, bullets, aliens, play_button, stats, sb)
         
-
-
 run_game()

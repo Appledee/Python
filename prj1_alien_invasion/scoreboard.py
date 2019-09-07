@@ -34,6 +34,7 @@ class Scoreboard():
         self.score_rect.top = 20
 
 
+
     def prep_level(self):
         """Turn the level into a rendered image."""
         self.level_image = self.font.render("L: " + str(self.stats.level), True,
@@ -43,7 +44,7 @@ class Scoreboard():
         self.level_rect.right = self.score_rect.right
         self.level_rect.top = self.score_rect.bottom + 10
 
-    
+
 
     def prep_high_score(self):
         """Turn the high score into a rendered image."""
@@ -68,7 +69,7 @@ class Scoreboard():
             self.ships.add(ship)
 
 
-
+            
     def show_score(self):
         """Draw score, high_score and levels to the screen."""
         self.screen.blit(self.score_image, self.score_rect)
