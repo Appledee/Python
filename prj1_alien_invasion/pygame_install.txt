@@ -1,0 +1,12 @@
+### Guide to install Pygame on Mac OS Majave
+
+1. Check Python version. E.g., python --version, or, python3 --version
+2. Check linkage between pip and Python. E.g., pip --version, or, pip3 --version
+3. brew install hg sdl sdl_image sdl_ttf
+4. brew install sdl_mixer portmidi
+5. pip3 install --user hg+http://bitbucket.org/pygame/pygame 
+6. or, sudo pip3 install pygame
+
+(suggest to use Python 3 and the
+lastest pip. If not, use 'pip3 install --upgrade pip' to upgrade)
+
